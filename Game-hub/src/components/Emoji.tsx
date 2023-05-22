@@ -8,7 +8,7 @@ interface Pops {
 }
 
 const Emoji = ({ rating }: Pops) => {
-  if (rating < 5) return null;
+  if (rating < 3) return null;
 
   const emojiMap: { [key: number]: ImageProps } = {
     3: { src: meh, alt: "meh" },
